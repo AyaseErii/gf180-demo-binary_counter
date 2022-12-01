@@ -1,0 +1,42 @@
+OpenROAD 7f00621cb612fd94e15b35790afe744c89d433a7 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/htf6ry/gf180-demo/openlane/user_project_wrapper/runs/22_12_01_10_34/tmp/merged.nom.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 60 technology vias
+[INFO ODB-0225]     Created 230 library cells
+[INFO ODB-0226] Finished LEF file:  /home/htf6ry/gf180-demo/openlane/user_project_wrapper/runs/22_12_01_10_34/tmp/merged.nom.lef
+[INFO ODB-0127] Reading DEF file: /home/htf6ry/gf180-demo/openlane/user_project_wrapper/runs/22_12_01_10_34/results/routing/user_project_wrapper.def
+[INFO ODB-0128] Design: user_project_wrapper
+[INFO ODB-0130]     Created 418 pins.
+[INFO ODB-0131]     Created 1 components and 83 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 2 connections.
+[INFO ODB-0133]     Created 416 nets and 81 connections.
+[INFO ODB-0134] Finished DEF file: /home/htf6ry/gf180-demo/openlane/user_project_wrapper/runs/22_12_01_10_34/results/routing/user_project_wrapper.def
+Using RCX ruleset '/home/htf6ry/GF180PDK//gf180mcuC/libs.tech/openlane/rules.openrcx.gf180mcuC.nom.magic'...
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0008] extracting parasitics of user_project_wrapper ...
+[INFO RCX-0435] Reading extraction model file /home/htf6ry/GF180PDK//gf180mcuC/libs.tech/openlane/rules.openrcx.gf180mcuC.nom.magic ...
+[INFO RCX-0436] RC segment generation user_project_wrapper (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 446 rc segments
+[INFO RCX-0439] Coupling Cap extraction user_project_wrapper ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0043] 682 wires to be extracted
+[INFO RCX-0442] 6% completion -- 47 wires have been extracted
+[INFO RCX-0442] 12% completion -- 82 wires have been extracted
+[INFO RCX-0442] 33% completion -- 228 wires have been extracted
+[INFO RCX-0442] 38% completion -- 260 wires have been extracted
+[INFO RCX-0442] 50% completion -- 341 wires have been extracted
+[INFO RCX-0442] 61% completion -- 418 wires have been extracted
+[INFO RCX-0442] 83% completion -- 571 wires have been extracted
+[INFO RCX-0442] 100% completion -- 682 wires have been extracted
+[INFO RCX-0045] Extract 416 nets, 527 rsegs, 527 caps, 94 ccs
+[INFO RCX-0015] Finished extracting user_project_wrapper.
+Writing result to /home/htf6ry/gf180-demo/openlane/user_project_wrapper/runs/22_12_01_10_34/results/routing/mca/process_corner_nom/user_project_wrapper.spef...
+Setting global connections for newly added cells...
+[WARNING] Did not save OpenROAD database!
+Writing extracted parasitics to /home/htf6ry/gf180-demo/openlane/user_project_wrapper/runs/22_12_01_10_34/results/routing/mca/process_corner_nom/user_project_wrapper.spef...
+[INFO RCX-0016] Writing SPEF ...
+[INFO RCX-0443] 416 nets finished
+[INFO RCX-0017] Finished writing SPEF ...

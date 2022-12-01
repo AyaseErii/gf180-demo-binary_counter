@@ -1,0 +1,140 @@
+OpenROAD 7f00621cb612fd94e15b35790afe744c89d433a7 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+No paths found.
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+No paths found.
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: io_in[23] (input port clocked by user_clock2)
+Endpoint: cntr_example_1/io_in[23] (internal pin)
+Path Group: (none)
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                         10.00   10.00 ^ input external delay
+                 13.17    8.25   18.25 ^ io_in[23] (in)
+     1    0.58                           io_in[23] (net)
+                 13.21    0.00   18.25 ^ cntr_example_1/io_in[23] (cntr_example)
+                                 18.25   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.
+check_report_end
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+max slew
+
+Pin                                    Limit    Slew   Slack
+------------------------------------------------------------
+io_in[23]                               8.60   13.17   -4.57 (VIOLATED)
+io_in[37]                               8.60   10.74   -2.14 (VIOLATED)
+io_in[25]                               8.60    9.88   -1.28 (VIOLATED)
+wb_clk_i                                8.60    9.87   -1.27 (VIOLATED)
+io_in[16]                               8.60    8.90   -0.30 (VIOLATED)
+
+max capacitance
+
+Pin                                    Limit     Cap   Slack
+------------------------------------------------------------
+io_in[23]                               0.35    0.58   -0.23 (VIOLATED)
+io_in[37]                               0.35    0.47   -0.12 (VIOLATED)
+io_in[25]                               0.35    0.43   -0.08 (VIOLATED)
+wb_clk_i                                0.35    0.43   -0.08 (VIOLATED)
+io_in[16]                               0.35    0.39   -0.04 (VIOLATED)
+io_in[17]                               0.35    0.37   -0.02 (VIOLATED)
+wb_rst_i                                0.35    0.36   -0.01 (VIOLATED)
+
+
+===========================================================================
+max slew violation count 5
+max fanout violation count 0
+max cap violation count 7
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack INF
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack INF
+worst_slack_end
+clock_skew
+
+===========================================================================
+ report_clock_skew
+============================================================================
+Clock user_clock2
+No launch/capture paths found.
+
+clock_skew_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+                           0.0%       0.0%       0.0%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 90000 u^2 1% utilization.
+area_report_end
+Setting global connections for newly added cells...
+[WARNING] Did not save OpenROAD database!
+Writing SDF to /home/htf6ry/gf180-demo/openlane/user_project_wrapper/runs/22_12_01_10_34/results/routing/mca/process_corner_nom/user_project_wrapper.sdf...
+Writing timing model to /home/htf6ry/gf180-demo/openlane/user_project_wrapper/runs/22_12_01_10_34/results/routing/mca/process_corner_nom/user_project_wrapper.lib...

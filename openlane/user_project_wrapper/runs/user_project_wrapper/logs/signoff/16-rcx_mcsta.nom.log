@@ -1,0 +1,350 @@
+OpenROAD 7f00621cb612fd94e15b35790afe744c89d433a7 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+
+======================= Slowest Corner ===================================
+
+No paths found.
+
+======================= Typical Corner ===================================
+
+No paths found.
+
+======================= Fastest Corner ===================================
+
+No paths found.
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+
+======================= Slowest Corner ===================================
+
+No paths found.
+
+======================= Typical Corner ===================================
+
+No paths found.
+
+======================= Fastest Corner ===================================
+
+No paths found.
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+
+======================= Slowest Corner ===================================
+
+Startpoint: io_in[23] (input port clocked by user_clock2)
+Endpoint: cntr_example_1/io_in[23] (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: ss
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                         10.00   10.00 ^ input external delay
+                 71.88   45.69   55.69 ^ io_in[23] (in)
+     1    0.58                           io_in[23] (net)
+                 71.89    0.00   55.69 ^ cntr_example_1/io_in[23] (cntr_example)
+                                 55.69   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+======================= Typical Corner ===================================
+
+Startpoint: io_in[23] (input port clocked by user_clock2)
+Endpoint: cntr_example_1/io_in[23] (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                         10.00   10.00 ^ input external delay
+                 13.17    8.25   18.25 ^ io_in[23] (in)
+     1    0.58                           io_in[23] (net)
+                 13.21    0.00   18.25 ^ cntr_example_1/io_in[23] (cntr_example)
+                                 18.25   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+======================= Fastest Corner ===================================
+
+Startpoint: io_in[23] (input port clocked by user_clock2)
+Endpoint: cntr_example_1/io_in[23] (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: ff
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                         10.00   10.00 ^ input external delay
+                  6.05    3.91   13.91 ^ io_in[23] (in)
+     1    0.58                           io_in[23] (net)
+                  6.14    0.00   13.91 ^ cntr_example_1/io_in[23] (cntr_example)
+                                 13.91   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+
+======================= Slowest Corner ===================================
+
+No paths found.
+
+======================= Typical Corner ===================================
+
+No paths found.
+
+======================= Fastest Corner ===================================
+
+No paths found.
+check_report_end
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+
+======================= Slowest Corner ===================================
+
+max slew
+
+Pin                                    Limit    Slew   Slack
+------------------------------------------------------------
+io_in[23]                              25.00   71.88  -46.88 (VIOLATED)
+io_in[37]                              25.00   58.64  -33.64 (VIOLATED)
+io_in[25]                              25.00   53.93  -28.93 (VIOLATED)
+wb_clk_i                               25.00   53.59  -28.59 (VIOLATED)
+io_in[16]                              25.00   48.49  -23.49 (VIOLATED)
+io_in[17]                              25.00   46.46  -21.46 (VIOLATED)
+wb_rst_i                               25.00   45.23  -20.23 (VIOLATED)
+io_in[22]                              25.00   39.97  -14.97 (VIOLATED)
+wbs_we_i                               25.00   37.23  -12.23 (VIOLATED)
+wbs_cyc_i                              25.00   31.44   -6.44 (VIOLATED)
+io_in[4]                               25.00   31.02   -6.02 (VIOLATED)
+io_in[0]                               25.00   28.98   -3.98 (VIOLATED)
+io_in[14]                              25.00   28.57   -3.57 (VIOLATED)
+io_in[1]                               25.00   26.85   -1.85 (VIOLATED)
+
+max capacitance
+
+Pin                                    Limit     Cap   Slack
+------------------------------------------------------------
+io_in[23]                               0.19    0.58   -0.38 (VIOLATED)
+io_in[37]                               0.19    0.47   -0.28 (VIOLATED)
+io_in[25]                               0.19    0.43   -0.24 (VIOLATED)
+wb_clk_i                                0.19    0.43   -0.24 (VIOLATED)
+io_in[16]                               0.19    0.39   -0.20 (VIOLATED)
+io_in[17]                               0.19    0.37   -0.18 (VIOLATED)
+wb_rst_i                                0.19    0.36   -0.17 (VIOLATED)
+io_in[22]                               0.19    0.32   -0.13 (VIOLATED)
+wbs_we_i                                0.19    0.30   -0.10 (VIOLATED)
+wbs_cyc_i                               0.19    0.25   -0.06 (VIOLATED)
+io_in[4]                                0.19    0.25   -0.05 (VIOLATED)
+io_in[0]                                0.19    0.23   -0.04 (VIOLATED)
+io_in[14]                               0.19    0.23   -0.03 (VIOLATED)
+io_in[1]                                0.19    0.21   -0.02 (VIOLATED)
+
+
+======================= Typical Corner ===================================
+
+max slew
+
+Pin                                    Limit    Slew   Slack
+------------------------------------------------------------
+io_in[23]                               8.60   13.17   -4.57 (VIOLATED)
+io_in[37]                               8.60   10.74   -2.14 (VIOLATED)
+io_in[25]                               8.60    9.88   -1.28 (VIOLATED)
+wb_clk_i                                8.60    9.87   -1.27 (VIOLATED)
+io_in[16]                               8.60    8.90   -0.30 (VIOLATED)
+
+max capacitance
+
+Pin                                    Limit     Cap   Slack
+------------------------------------------------------------
+io_in[23]                               0.35    0.58   -0.23 (VIOLATED)
+io_in[37]                               0.35    0.47   -0.12 (VIOLATED)
+io_in[25]                               0.35    0.43   -0.08 (VIOLATED)
+wb_clk_i                                0.35    0.43   -0.08 (VIOLATED)
+io_in[16]                               0.35    0.39   -0.04 (VIOLATED)
+io_in[17]                               0.35    0.37   -0.02 (VIOLATED)
+wb_rst_i                                0.35    0.36   -0.01 (VIOLATED)
+
+
+======================= Fastest Corner ===================================
+
+max slew
+
+Pin                                    Limit    Slew   Slack
+------------------------------------------------------------
+io_in[23]                               2.60    6.05   -3.45 (VIOLATED)
+io_in[37]                               2.60    4.93   -2.33 (VIOLATED)
+io_in[25]                               2.60    4.54   -1.94 (VIOLATED)
+wb_clk_i                                2.60    4.51   -1.91 (VIOLATED)
+io_in[16]                               2.60    4.08   -1.48 (VIOLATED)
+io_in[17]                               2.60    3.92   -1.32 (VIOLATED)
+wb_rst_i                                2.60    3.81   -1.21 (VIOLATED)
+io_in[22]                               2.60    3.35   -0.75 (VIOLATED)
+wbs_we_i                                2.60    3.13   -0.53 (VIOLATED)
+wbs_cyc_i                               2.60    2.65   -0.05 (VIOLATED)
+io_in[4]                                2.60    2.61   -0.01 (VIOLATED)
+
+max capacitance
+
+Pin                                    Limit     Cap   Slack
+------------------------------------------------------------
+io_in[23]                               0.23    0.58   -0.35 (VIOLATED)
+io_in[37]                               0.23    0.47   -0.24 (VIOLATED)
+io_in[25]                               0.23    0.43   -0.20 (VIOLATED)
+wb_clk_i                                0.23    0.43   -0.20 (VIOLATED)
+io_in[16]                               0.23    0.39   -0.16 (VIOLATED)
+io_in[17]                               0.23    0.37   -0.14 (VIOLATED)
+wb_rst_i                                0.23    0.36   -0.13 (VIOLATED)
+io_in[22]                               0.23    0.32   -0.09 (VIOLATED)
+wbs_we_i                                0.23    0.30   -0.07 (VIOLATED)
+wbs_cyc_i                               0.23    0.25   -0.02 (VIOLATED)
+io_in[4]                                0.23    0.25   -0.02 (VIOLATED)
+io_in[0]                                0.23    0.23   -0.00 (VIOLATED)
+io_in[14]                               0.23    0.23   -0.00 (VIOLATED)
+
+
+===========================================================================
+max slew violation count 14
+max fanout violation count 0
+max cap violation count 14
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack INF
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack INF
+worst_slack_end
+clock_skew
+
+===========================================================================
+ report_clock_skew
+============================================================================
+
+======================== Slowest Corner ==================================
+
+Clock user_clock2
+No launch/capture paths found.
+
+
+======================= Typical Corner ===================================
+
+Clock user_clock2
+No launch/capture paths found.
+
+
+======================= Fastest Corner ===================================
+
+Clock user_clock2
+No launch/capture paths found.
+
+clock_skew_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+
+
+======================= Slowest Corner =================================
+
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+                           0.0%       0.0%       0.0%
+
+======================= Typical Corner ===================================
+
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+                           0.0%       0.0%       0.0%
+
+
+======================= Fastest Corner =================================
+
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+                           0.0%       0.0%       0.0%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 90000 u^2 1% utilization.
+area_report_end
+Setting global connections for newly added cells...
+[WARNING] Did not save OpenROAD database!
+Writing SDF files for all corners...
+Writing SDF for the ff corner to /home/htf6ry/gf180-demo/openlane/user_project_wrapper/runs/22_12_01_10_34/results/routing/mca/process_corner_nom/user_project_wrapper.ff.sdf...
+Writing SDF for the ss corner to /home/htf6ry/gf180-demo/openlane/user_project_wrapper/runs/22_12_01_10_34/results/routing/mca/process_corner_nom/user_project_wrapper.ss.sdf...
+Writing SDF for the tt corner to /home/htf6ry/gf180-demo/openlane/user_project_wrapper/runs/22_12_01_10_34/results/routing/mca/process_corner_nom/user_project_wrapper.tt.sdf...
+Writing timing models for all corners...
+Writing timing models for the ff corner to /home/htf6ry/gf180-demo/openlane/user_project_wrapper/runs/22_12_01_10_34/results/routing/mca/process_corner_nom/user_project_wrapper.ff.lib...
+Writing timing models for the ss corner to /home/htf6ry/gf180-demo/openlane/user_project_wrapper/runs/22_12_01_10_34/results/routing/mca/process_corner_nom/user_project_wrapper.ss.lib...
+Writing timing models for the tt corner to /home/htf6ry/gf180-demo/openlane/user_project_wrapper/runs/22_12_01_10_34/results/routing/mca/process_corner_nom/user_project_wrapper.tt.lib...

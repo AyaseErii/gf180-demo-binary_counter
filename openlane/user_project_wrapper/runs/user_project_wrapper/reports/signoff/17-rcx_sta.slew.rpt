@@ -1,0 +1,32 @@
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+max slew
+
+Pin                                    Limit    Slew   Slack
+------------------------------------------------------------
+io_in[23]                               8.60   13.17   -4.57 (VIOLATED)
+io_in[37]                               8.60   10.74   -2.14 (VIOLATED)
+io_in[25]                               8.60    9.88   -1.28 (VIOLATED)
+wb_clk_i                                8.60    9.87   -1.27 (VIOLATED)
+io_in[16]                               8.60    8.90   -0.30 (VIOLATED)
+
+max capacitance
+
+Pin                                    Limit     Cap   Slack
+------------------------------------------------------------
+io_in[23]                               0.35    0.58   -0.23 (VIOLATED)
+io_in[37]                               0.35    0.47   -0.12 (VIOLATED)
+io_in[25]                               0.35    0.43   -0.08 (VIOLATED)
+wb_clk_i                                0.35    0.43   -0.08 (VIOLATED)
+io_in[16]                               0.35    0.39   -0.04 (VIOLATED)
+io_in[17]                               0.35    0.37   -0.02 (VIOLATED)
+wb_rst_i                                0.35    0.36   -0.01 (VIOLATED)
+
+
+===========================================================================
+max slew violation count 5
+max fanout violation count 0
+max cap violation count 7
+============================================================================

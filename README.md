@@ -32,7 +32,7 @@ Once you have done with the above commands, you need to go to `gf180-demo-sequen
 make user_project_wrapper
 ```
 
-After the flow compeleted, you can do the Step 2 iteratively until you get a satisfied design.
+After the flow compeleted, you can repeat the Step 2 iteratively until you get a satisfied design.
 
 ## Contributors
 Jun (Jerry) Yin, Ceylan M. Morgul, Rahul Sreekumar, Xuanjia (Eric) Bi, and Mircea R. Stan.

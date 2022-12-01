@@ -8,7 +8,10 @@
 ## Sequential Counter
 
 This is a seuqential digital counter.
+
 The counter design is located at `./openlane/cntr_example` and the wrappered counter is located at `./openlane/user_project_wrapper`.
+
+Before running the flow
 
 ## Additional Information about Caravel
 

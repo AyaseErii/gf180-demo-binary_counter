@@ -11,7 +11,12 @@ This is a seuqential digital counter.
 
 The counter design is located at `./openlane/cntr_example` and the wrappered counter is located at `./openlane/user_project_wrapper`.
 
-Before running the flow
+Before running the design flow, please make sure the gf180 pds was installed correctly. For the information about switching PDK from `sky130` to `gf180`, you may refer to [this video](https://www.youtube.com/watch?v=4-kISttsPbY). (Great thanks to Matt)
+
+Once you have done with pdk setups, you can simply follow the commands below:
+```
+git clone 
+```
 
 ## Additional Information about Caravel
 

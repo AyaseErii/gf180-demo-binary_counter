@@ -1,0 +1,79 @@
+- status: 0 - openlane design prep
+  runtime_s: 1.85
+  runtime_ts: 0h0m1s854ms
+- status: 1 - synthesis - yosys
+  runtime_s: 1.08
+  runtime_ts: 0h0m1s80ms
+- status: 2 - sta - openroad
+  runtime_s: 0.71
+  runtime_ts: 0h0m0s714ms
+- status: 3 - floorplan initialization - openroad
+  runtime_s: 1.51
+  runtime_ts: 0h0m1s511ms
+- status: 4 - ioplace - openroad
+  runtime_s: 0.78
+  runtime_ts: 0h0m0s776ms
+- status: 6 - pdn generation - openroad
+  runtime_s: 0.77
+  runtime_ts: 0h0m0s774ms
+- status: 7 - random global placement - openlane
+  runtime_s: 0.28
+  runtime_ts: 0h0m0s278ms
+- status: 8 - detailed placement - openroad
+  runtime_s: 0.94
+  runtime_ts: 0h0m0s935ms
+- status: 9 - resizer timing optimizations - openroad
+  runtime_s: 1.41
+  runtime_ts: 0h0m1s413ms
+- status: 10 - detailed placement - openroad
+  runtime_s: 1.18
+  runtime_ts: 0h0m1s179ms
+- status: 12 - write verilog - openroad
+  runtime_s: 0.92
+  runtime_ts: 0h0m0s919ms
+- status: 12 - global routing - openroad
+  runtime_s: 1.0
+  runtime_ts: 0h0m1s4ms
+- status: 13 - detailed_routing - openroad
+  runtime_s: 13.96
+  runtime_ts: 0h0m13s964ms
+- status: 14 - wire lengths - openlane
+  runtime_s: 0.67
+  runtime_ts: 0h0m0s671ms
+- status: 15 - parasitics extraction - openroad
+  runtime_s: 0.77
+  runtime_ts: 0h0m0s766ms
+- status: 16 - sta - openroad
+  runtime_s: 2.32
+  runtime_ts: 0h0m2s318ms
+- status: 17 - sta - openroad
+  runtime_s: 1.06
+  runtime_ts: 0h0m1s56ms
+- status: 18 - gdsii - magic
+  runtime_s: 2.94
+  runtime_ts: 0h0m2s939ms
+- status: 19 - spice extraction - magic
+  runtime_s: 1.95
+  runtime_ts: 0h0m1s948ms
+- status: 21 - write verilog - openroad
+  runtime_s: 1.03
+  runtime_ts: 0h0m1s32ms
+- status: 21 - write powered verilog - openlane
+  runtime_s: 1.13
+  runtime_ts: 0h0m1s125ms
+- status: 22 - lvs - netgen
+  runtime_s: 0.09
+  runtime_ts: 0h0m0s85ms
+- status: 23 - drc - magic
+  runtime_s: 7.68
+  runtime_ts: 0h0m7s676ms
+- status: 24 - antenna check - openroad
+  runtime_s: 1.08
+  runtime_ts: 0h0m1s78ms
+---
+- status: routed
+  runtime_s: 31.0
+  runtime_ts: 0h0m31s0ms
+- status: flow completed
+  runtime_s: 52.0
+  runtime_ts: 0h0m52s0ms

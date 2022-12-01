@@ -1,0 +1,2 @@
+[WARNING]: There are max slew violations in the design at the typical corner. Please refer to '../home/htf6ry/gf180-demo/openlane/user_project_wrapper/runs/22_12_01_10_34/reports/signoff/17-rcx_sta.slew.rpt'.
+[WARNING]: There are max capacitance violations in the design at the typical corner. Please refer to '../home/htf6ry/gf180-demo/openlane/user_project_wrapper/runs/22_12_01_10_34/reports/signoff/17-rcx_sta.slew.rpt'.

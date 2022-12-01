@@ -5,9 +5,9 @@
 | :exclamation: Important Note            |
 |-----------------------------------------|
 
-## Sequential Counter
+## Digital Counter
 
-This is a seuqential digital counter.
+This is a digital counter with `clock`, `reset`, `data_in`, `scanload`, and `count_out`.
 
 The counter design is located at `./openlane/cntr_example` and the wrappered counter is located at `./openlane/user_project_wrapper`.
 

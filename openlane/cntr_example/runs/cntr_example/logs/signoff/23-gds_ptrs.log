@@ -231,4 +231,4 @@ Moving label "& Product GF018hv5v_mcu_sc7" from space to pwell in cell gf180mcu_
 Moving label "& Version 2015q2v1" from space to pwell in cell gf180mcu_fd_sc_mcu7t5v0__nor3_1.
 Moving label "& Metric 1.00" from space to pwell in cell gf180mcu_fd_sc_mcu7t5v0__nor3_1.
 Reading "cntr_example".
-[INFO]: Wrote /home/htf6ry/gf180-demo/openlane/cntr_example/runs/22_12_01_09_51/tmp/signoff/gds_ptrs.mag including GDS pointers.
+[INFO]: Wrote /home/htf6ry/gf180-demo/openlane/cntr_example/runs/22_12_01_12_39/tmp/signoff/gds_ptrs.mag including GDS pointers.

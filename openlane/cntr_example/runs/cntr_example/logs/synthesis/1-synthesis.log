@@ -35,7 +35,7 @@ Generating RTLIL representation for module `\cntr'.
 Successfully finished Verilog frontend.
 
 2. Generating Graphviz representation of design.
-Writing dot description to `/home/htf6ry/gf180-demo/openlane/cntr_example/runs/22_12_01_09_51/tmp/synthesis/hierarchy.dot'.
+Writing dot description to `/home/htf6ry/gf180-demo/openlane/cntr_example/runs/22_12_01_12_39/tmp/synthesis/hierarchy.dot'.
 Dumping module cntr_example to page 1.
 
 3. Executing HIERARCHY pass (managing design hierarchy).
@@ -538,7 +538,7 @@ Checking module cntr_example...
 Found and reported 0 problems.
 
 5. Generating Graphviz representation of design.
-Writing dot description to `/home/htf6ry/gf180-demo/openlane/cntr_example/runs/22_12_01_09_51/tmp/synthesis/post_techmap.dot'.
+Writing dot description to `/home/htf6ry/gf180-demo/openlane/cntr_example/runs/22_12_01_12_39/tmp/synthesis/post_techmap.dot'.
 Dumping module cntr_example to page 1.
 Warning: WIDTHLABEL \io_in [0] 1
 Warning: WIDTHLABEL \cntr.q [0] 1
@@ -806,15 +806,15 @@ Mapping DFF cells in module `\cntr_example':
 
 12. Executing ABC pass (technology mapping using ABC).
 
-12.1. Extracting gate netlist of module `\cntr_example' to `/tmp/yosys-abc-vjusJJ/input.blif'..
+12.1. Extracting gate netlist of module `\cntr_example' to `/tmp/yosys-abc-3kTM3z/input.blif'..
 Extracted 216 gates and 284 wires to a netlist network with 68 inputs and 64 outputs.
 
 12.1.1. Executing ABC.
-Running ABC command: "/build/bin/yosys-abc" -s -f /tmp/yosys-abc-vjusJJ/abc.script 2>&1
-ABC: ABC command line: "source /tmp/yosys-abc-vjusJJ/abc.script".
+Running ABC command: "/build/bin/yosys-abc" -s -f /tmp/yosys-abc-3kTM3z/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-3kTM3z/abc.script".
 ABC: 
-ABC: + read_blif /tmp/yosys-abc-vjusJJ/input.blif 
-ABC: + read_lib -w /home/htf6ry/gf180-demo/openlane/cntr_example/runs/22_12_01_09_51/tmp/synthesis/trimmed.lib 
+ABC: + read_blif /tmp/yosys-abc-3kTM3z/input.blif 
+ABC: + read_lib -w /home/htf6ry/gf180-demo/openlane/cntr_example/runs/22_12_01_12_39/tmp/synthesis/trimmed.lib 
 ABC: Parsing finished successfully.  Parsing time =     0.10 sec
 ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__antenna" without logic function.
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__bufz_1".
@@ -888,13 +888,13 @@ ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__l
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latsnq_1".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latsnq_2".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latsnq_4".
-ABC: Library "gf180mcuC_merged" from "/home/htf6ry/gf180-demo/openlane/cntr_example/runs/22_12_01_09_51/tmp/synthesis/trimmed.lib" has 143 cells (72 skipped: 36 seq; 15 tri-state; 21 no func; 0 dont_use).  Time =     0.20 sec
-ABC: Memory =   23.58 MB. Time =     0.20 sec
+ABC: Library "gf180mcuC_merged" from "/home/htf6ry/gf180-demo/openlane/cntr_example/runs/22_12_01_12_39/tmp/synthesis/trimmed.lib" has 143 cells (72 skipped: 36 seq; 15 tri-state; 21 no func; 0 dont_use).  Time =     0.21 sec
+ABC: Memory =   23.58 MB. Time =     0.21 sec
 ABC: Warning: Detected 6 multi-output gates (for example, "gf180mcu_fd_sc_mcu7t5v0__addf_1").
-ABC: + read_constr -v /home/htf6ry/gf180-demo/openlane/cntr_example/runs/22_12_01_09_51/tmp/synthesis/synthesis.sdc 
+ABC: + read_constr -v /home/htf6ry/gf180-demo/openlane/cntr_example/runs/22_12_01_12_39/tmp/synthesis/synthesis.sdc 
 ABC: Setting driving cell to be "gf180mcu_fd_sc_mcu7t5v0__inv_1".
 ABC: Setting output load to be 72.910004.
-ABC: + read_constr /home/htf6ry/gf180-demo/openlane/cntr_example/runs/22_12_01_09_51/tmp/synthesis/synthesis.sdc 
+ABC: + read_constr /home/htf6ry/gf180-demo/openlane/cntr_example/runs/22_12_01_12_39/tmp/synthesis/synthesis.sdc 
 ABC: + fx 
 ABC: + mfs 
 ABC: + strash 
@@ -973,7 +973,7 @@ ABC: Path  7 --     191 : 5    1 gf180mcu_fd_sc_mcu7t5v0__oai32_1 A =  26.34  Df
 ABC: Start-point = pi4 (\io_out [1]).  End-point = po5 ($auto$rtlil.cc:2560:MuxGate$933).
 ABC: + print_stats -m 
 ABC: netlist                       : i/o =   68/   64  lat =    0  nd =   253  edge =    587  area =3911.70  delay = 7.00  lev = 7
-ABC: + write_blif /tmp/yosys-abc-vjusJJ/output.blif 
+ABC: + write_blif /tmp/yosys-abc-3kTM3z/output.blif 
 
 12.1.2. Re-integrating ABC results.
 ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__or4_1 cells:        1
@@ -1101,6 +1101,6 @@ Found and reported 38 problems.
 Dumping module `\cntr_example'.
 
 Warnings: 104 unique messages, 182 total
-End of script. Logfile hash: 9fa9af820f, CPU: user 1.23s system 0.03s, MEM: 58.73 MB peak
+End of script. Logfile hash: c604ade317, CPU: user 1.24s system 0.03s, MEM: 58.77 MB peak
 Yosys 0.22 (git sha1 f109fa3d4c5, gcc 8.3.1 -fPIC -Os)
 Time spent: 30% 2x abc (0 sec), 28% 4x stat (0 sec), ...

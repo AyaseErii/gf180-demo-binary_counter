@@ -5,7 +5,10 @@
 | :exclamation: Important Note            |
 |-----------------------------------------|
 
-## Please fill in your project documentation in this README.md file 
+## Sequential Counter
+
+This is a seuqential digital counter.
+The counter design is located at `./openlane/cntr_example` and the wrappered counter is located at `./openlane/user_project_wrapper`.
 
 Refer to [README](docs/source/index.rst#section-quickstart) for a quickstart of how to use caravel_user_project
 

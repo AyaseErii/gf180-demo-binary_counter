@@ -21,7 +21,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 // baeckler - 06-16-2006
-//
+// Modified by Jun (Jerry) Yin - 12-01-2022
 // Standard issue binary counter with all of the register secondary
 // hardware. (1 cell per bit)
 

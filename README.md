@@ -13,10 +13,17 @@ The counter design is located at `./openlane/cntr_example` and the wrappered cou
 
 Before running the design flow, please make sure the gf180 pds was installed correctly. For the information about switching PDK from `sky130` to `gf180`, you may refer to [this video](https://www.youtube.com/watch?v=4-kISttsPbY). (Great thanks to Matt)
 
-Once you have done with pdk setups, you can simply follow the commands below:
+Once you have done with pdk setups, you can simply follow the commands below after you changed the corresponding [config.tcl]() file of the counter:
 ```
-git clone 
+git clone https://github.com/AyaseErii/gf180-demo-sequential_counter.git
+cd gf180-demo-sequential_counter
+make cntr_example
 ```
+
+The command above will generate the digital counter design (gdsii) and all necessary files for the next step---wrapper the design in to `user_project_wrapper`.
+
+To 
+
 
 ## Additional Information about Caravel
 

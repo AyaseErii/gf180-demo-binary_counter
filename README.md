@@ -9,7 +9,7 @@
 
 This is a digital counter with `clock`, `reset`, `data_in`, `scanload`, and `count_out`.
 
-The counter design is located at `./openlane/cntr_example` and the wrappered counter is located at `./openlane/user_project_wrapper`.
+The counter design (gdsii file) is located at [here](https://github.com/AyaseErii/gf180-demo-sequential_counter/tree/main/openlane/cntr_example/runs/cntr_example/results/final/gds) and the wrappered counter (gdsii file) is located at [here](https://github.com/AyaseErii/gf180-demo-sequential_counter/tree/main/openlane/user_project_wrapper/runs/user_project_wrapper/results/final/gds).
 
 ### Step 1: Create the Digital Counter Design
 Before running the design flow, please make sure the gf180 pds was installed correctly. For the information about switching PDK from `sky130` to `gf180`, you may refer to [this video](https://www.youtube.com/watch?v=4-kISttsPbY). (Great thanks to Matt)
